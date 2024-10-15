@@ -15,8 +15,8 @@ if st.button("Ejecutar ejercicio 4"):
     lista_numeros = [int(num) for num in numeros_ej1.split(",")]
     media = sum(lista_numeros) / len(lista_numeros)
     mayores = len ([num for num in lista_numeros if num > 10])
-    iguales = en ([num for num in lista_numeros if num == 10])
-    menores = en ([num for num in lista_numeros if num < 10])
+    iguales = len ([num for num in lista_numeros if num == 10])
+    menores = len ([num for num in lista_numeros if num < 10])
 
     st.write (f"la medida es: {media}")
     st.write (f"Mayores que 10: {mayores}")
