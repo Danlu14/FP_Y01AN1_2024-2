@@ -16,7 +16,8 @@ def mostrar_menu():
     elif seleccion == "Ver":
             st.write("Seleccionaste: Ver")
     elif seleccion == "Salir":
-            st.write("Saliendo del menú")    
-        
+            st.write("Saliendo del menú")  
+
+
 if__name__ == "__main__":
     mostrar_menu()
