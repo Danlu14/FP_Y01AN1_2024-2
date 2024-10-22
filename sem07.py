@@ -1,6 +1,6 @@
 import streamlit as st
 
-def mostrar_menu()
+def mostrar_menu():
     st.title("Ejemplo de menu")
     st.write("Selecciona una opcion del menu")
 
@@ -19,4 +19,4 @@ def mostrar_menu()
             st.write("Saliendo del menú")    
         
 if__name__ == "__main__":
-    mostrar_menu           
+    mostrar_menu()
