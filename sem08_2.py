@@ -6,7 +6,7 @@ def calcular(operacion, num1, num2):
         num1 = float(num1)
         num2 = float(num2)
     except ValueError:
-        return "Por favor, ingrese números válidos ps imbecil"
+        return "Por favor, ingrese números válidos"
 
     if operacion == "Suma":
         return num1+num2
@@ -15,7 +15,7 @@ def calcular(operacion, num1, num2):
     elif operacion == "Multiplicación":
         return num1*num2
     elif operacion == "División":
-        if num  == 0:
+        if num2  == 0:
             return "Error: No se puede dividir entre 0"
         return num1/num2
     else:
@@ -26,18 +26,16 @@ def main():
     st.write("Seleccione la operación e ingrese los números:")
 
     #Seleccione la operación
-    operacion = st.selectbox("Suma", "Resta", "Multiplicación", "División")
+    operacion = st.selectbox("Operación",("Suma", "Resta", "Multiplicación", "División"))
 
     #Entradas para los números
     num1 = st.text_input("Número 1")
     num2 = st.text_input("Número 2")
 
     #Botón para calcular
-    if st.button("calcular"):
+    if st.button("Calcular"):
         resultado = calcular(operacion, num1, num2)
         st.write("**Resultado:**", resultado)
 
 if __name__ == "__main__":
     main()
-
-    
