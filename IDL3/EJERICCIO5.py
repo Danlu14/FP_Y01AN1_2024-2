@@ -3,7 +3,7 @@ import streamlit as st
 if 'numeros' not in st.session_state:
     st.session_state.numeros = []
 
-st.title("Calcular el Número Mayor de una Lista de N Números")
+st.title("Ejercicio5: Calcular el Número Mayor de una Lista de N Números")
 
 numero = st.number_input("Ingrese un número:", step=1.0)
 
