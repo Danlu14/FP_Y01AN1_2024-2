@@ -2,10 +2,10 @@ import streamlit as st
 import numpy as np  # Importar numpy para manejar arrays
 
 # Título de la aplicación
-st.title("Ejercicio: Array de 10 Números")
+st.title("Ejercicio 9: Array de 10 Números")
 
 # Inicializar el array de 10 posiciones
-numeros = np.zeros(10)  # Crear un array de ceros de 10 posiciones
+numeros = np.zeros(10)  
 
 # Pedir al usuario que ingrese 10 números
 st.write("Ingrese 10 números:")
