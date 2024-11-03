@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.tittle("Ejercicio 3: Promedio de pares")
+st.title("Ejercicio 3: Promedio de pares")
 
 pares = [i for i in range(20, 401, 2)]
 
